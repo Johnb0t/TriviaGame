@@ -20,7 +20,7 @@ h1 {
 	color: white;
 }
 h2 {
-	margin-bottom: 100px;
+	margin: 0;
 }
 #start {
 	font-weight: bold;
@@ -55,4 +55,7 @@ h2 {
 }
 #timer {
 	text-align: center;
+}
+#timeOut {
+	margin-bottom: 75%;
 }
