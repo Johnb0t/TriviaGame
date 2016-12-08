@@ -9,12 +9,12 @@ body {
 	width: 100%;
 	max-width: 960px;
 	margin: 0 auto;
-	background: grey;
+	background: #b5b5b5;
 	height: 100%;
 }
 h1 {
 	font-size: 40px;
-	background: #840000;
+	background: #3e3636;
 	padding: 20px;
 	margin-top: 0;
 	color: white;
@@ -24,7 +24,7 @@ h2 {
 }
 #start {
 	font-weight: bold;
-	background: #840000;
+	background: #3e3636;
 	width: 125px;
 	padding: 20px;
 	left: 50px;
@@ -36,7 +36,7 @@ h2 {
 }
 #submit {
 	font-weight: bold;
-	background: #840000;
+	background: #3e3636;
 	width: 125px;
 	padding: 20px;
 	left: 50px;
@@ -48,4 +48,11 @@ h2 {
 }
 #results {
 	margin-bottom: 50%;
+}
+.questions {
+	text-align: left;
+	padding: 20px;
+}
+#timer {
+	text-align: center;
 }
