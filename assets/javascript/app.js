@@ -41,13 +41,14 @@
       		}
 		}
 	});
-
+	//On click for submit button
 	$('#submit').on('click', function() {
 		stop();
 		$('#submit').hide();
 		$('.questions').hide();
 		$('#results').show();
 		$('#timeOut').hide()
+		//Create loop to go through radio buttons and get values
 		for (var i = 1; i <= 8; i++) {
 			if ($('input[name=question' + i + ']:checked').val() == "true") {
 				correct++;
@@ -55,9 +56,10 @@
 				incorrect++
 			}
 		};
+		//Inject the results of the quiz
 		var resultsHtml =  "<p>Correct: " + correct + " out of 8</p>" +
 						   "<br>" + "<p>Incorrect: " + incorrect + " out of 8</p>";
-
+						   
 		$('#results').append(resultsHtml);
 		if (correct < 7) {
 			$('#results').append("<br><h2>You need to study!</h2>")
