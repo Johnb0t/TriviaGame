@@ -35,17 +35,17 @@
       		$("#timer").html("<h2>" + triviaTimer + " seconds remaining!!</h2>");
       		//Change font color based on time
       		if (triviaTimer <= 30) {
-      			$('#timer').css('color', 'yellow');
+      			$('#timer').css('color', '#cedc00');
       		}; 
       		if (triviaTimer <= 10) {
-      			$('#timer').css('color', 'red');
+      			$('#timer').css('color', '#771b1b');
       		};
       		//Once number hits zero...
       		if (triviaTimer === 0) {
         	//...run the stop function.
         	stop();
         	$('.questions').hide();
-        	$('#timeOut').show().append("<h2>Out of Time!</h2>");
+        	$('#timeOut').show().append("<h2>Out of Time!</h2>" + '<br><img id="timeImage" src="assets/images/outoftime.png">');
       		}
 		}
 	});
