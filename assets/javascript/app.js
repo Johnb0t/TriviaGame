@@ -1,7 +1,7 @@
 //declare global variables
 	var correct = 0;
 	var incorrect = 0;
-	var triviaTimer = 32;
+	var triviaTimer = 120;
 	var counter;
 
 	function stop() {
