@@ -18,6 +18,7 @@
 		$('.questions').show();
 		$('#submit').show();
 		$('#start').hide();
+		$('#instructions').hide();
 
 		//create counter to run on click of start button
 		function run() {
@@ -31,7 +32,7 @@
      	 	//Decrease number by one.
       		triviaTimer--;
       		//Show the number in the #show-number tag.
-      		$("#timer").html("<p>" + triviaTimer + " seconds remaining!!</p>");
+      		$("#timer").html("<h2>" + triviaTimer + " seconds remaining!!</h2>");
       		//Once number hits zero...
       		if (triviaTimer === 0) {
         	//...run the stop function.
@@ -47,8 +48,10 @@
 		$('#submit').hide();
 		$('.questions').hide();
 		$('#results').show();
-		$('#timeOut').hide()
+		$('#timeOut').hide();
+		var checkAns = $('input[name=question1]:checked').val()
 		//Create loop to go through radio buttons and get values
+		console.log(checkAns);
 		for (var i = 1; i <= 8; i++) {
 			if ($('input[name=question' + i + ']:checked').val() == "true") {
 				correct++;
