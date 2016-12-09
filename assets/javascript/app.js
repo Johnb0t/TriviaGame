@@ -67,14 +67,15 @@
 			}
 		};
 		//Inject the results of the quiz
-		var resultsHtml =  "<p>Correct: " + correct + " out of 8</p>" +
-						   "<br>" + "<p>Incorrect: " + incorrect + " out of 8</p>";
+		var percentage = correct / 8 * 100;
+		var resultsHtml = "<p>" + percentage + " %</p>" + "<p>Correct: " + correct + " out of 8</p>"
+						  + "<p>Incorrect: " + incorrect + " out of 8</p>";
 						   
 		$('#results').append(resultsHtml);
 		if (correct < 7) {
-			$('#results').append("<br><h2>You need to study!</h2>" + '<br><img id="resultImage" src="assets/images/tryagain.png">')
+			$('#results').append("<br><h2>You need to study!</h2><br>" + '<br><img id="resultImage" src="assets/images/tryagain.png">')
 		}
 		if (correct >= 7) {
-			$('#results').append("<br><h2>Great Job!</h2>" + '<br><img id="resultImage" src="assets/images/good.png">')
+			$('#results').append("<br><h2>Great Job!</h2><br>" + '<br><img id="resultImage" src="assets/images/good.png">')
 		}
 	});
