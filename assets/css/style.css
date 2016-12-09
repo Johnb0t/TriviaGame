@@ -62,6 +62,7 @@ h2 {
 }
 #timer {
 	text-align: center;
+	color: green;
 }
 #timeOut {
 	margin-bottom: 75%;

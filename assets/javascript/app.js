@@ -1,7 +1,7 @@
 //declare global variables
 	var correct = 0;
 	var incorrect = 0;
-	var triviaTimer = 120;
+	var triviaTimer = 32;
 	var counter;
 
 	function stop() {
@@ -33,6 +33,13 @@
       		triviaTimer--;
       		//Show the number in the #show-number tag.
       		$("#timer").html("<h2>" + triviaTimer + " seconds remaining!!</h2>");
+      		//Change font color based on time
+      		if (triviaTimer <= 30) {
+      			$('#timer').css('color', 'yellow');
+      		}; 
+      		if (triviaTimer <= 10) {
+      			$('#timer').css('color', 'red');
+      		};
       		//Once number hits zero...
       		if (triviaTimer === 0) {
         	//...run the stop function.
