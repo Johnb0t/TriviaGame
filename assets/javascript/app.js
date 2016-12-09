@@ -72,9 +72,9 @@
 						   
 		$('#results').append(resultsHtml);
 		if (correct < 7) {
-			$('#results').append("<br><h2>You need to study!</h2>")
+			$('#results').append("<br><h2>You need to study!</h2>" + '<br><img id="resultImage" src="assets/images/tryagain.png">')
 		}
 		if (correct >= 7) {
-			$('#results').append("<br><h2>Great Job!</h2>")
+			$('#results').append("<br><h2>Great Job!</h2>" + '<br><img id="resultImage" src="assets/images/good.png">')
 		}
 	});
