@@ -73,3 +73,8 @@ h2 {
 #timeimage {
 	width: 50%;
 }
+input[type=radio] {
+	border: 0px;
+	width: 1.5em;
+	height: 1.5em;
+}
