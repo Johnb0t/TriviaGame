@@ -68,5 +68,8 @@ h2 {
 	margin-bottom: 75%;
 }
 #resultImage {
-	width: 450px;
+	width: 50%;
+}
+#timeimage {
+	width: 50%;
 }
