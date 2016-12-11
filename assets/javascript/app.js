@@ -56,16 +56,15 @@
 		$('.questions').hide();
 		$('#results').show();
 		$('#timeOut').hide();
-		var checkAns = $('input[name=question1]:checked').val()
 		//Create loop to go through radio buttons and get values
-		console.log(checkAns);
 		for (var i = 1; i <= 8; i++) {
 			if ($('input[name=question' + i + ']:checked').val() == "true") {
 				correct++;
 			} else {
 				incorrect++
 			}
-		};
+		}
+		
 		//Inject the results of the quiz
 		var percentage = correct / 8 * 100;
 		var resultsHtml = "<p>" + percentage + " %</p>" + "<p>Correct: " + correct + " out of 8</p>"
